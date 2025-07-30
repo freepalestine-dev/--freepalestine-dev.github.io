@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>To Hiba, From Haitam</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+            color: #5a2a57;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+            max-width: 700px;
+            padding: 30px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            margin: 10px 0;
+        }
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            transform: rotate(45deg);
+            animation: float 10s linear infinite;
+        }
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: red;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            left: -10px;
+            top: 0;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To my beautiful wife, Hiba 💖</h1>
+        <p>In a world of noise, you are my silence.<br/>
+           In a life of chaos, you are my calm.</p>
+        <p>Every day I thank destiny for letting me meet you —<br/>
+           not just a classmate, not just a friend —<br/>
+           but the woman who became my entire universe.</p>
+        <p>Your smile rebuilds me.<br/>
+           Your voice gives rhythm to my soul.<br/>
+           Your love is my greatest blessing.</p>
+        <p>I don’t need a perfect life.<br/>
+           I just need you — your hand in mine,<br/>
+           your laughter beside me,<br/>
+           and your love to light my days.</p>
+        <p>You are beautiful.<br/>
+           You are precious.<br/>
+           You are everything I ever prayed for.</p>
+        <p>With all my love,<br/>
+           <strong>Haitam 💖</strong></p>
+    </div>
+
+    <audio autoplay loop>
+        <source src="https://cdn.pixabay.com/download/audio/2023/03/14/audio_126403cf45.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="hearts">
+        <!-- Multiple hearts -->
+        <div class="heart" style="left: 0%; animation-delay: 0s;"></div><div class="heart" style="left: 10%; animation-delay: 1s;"></div><div class="heart" style="left: 20%; animation-delay: 2s;"></div><div class="heart" style="left: 30%; animation-delay: 3s;"></div><div class="heart" style="left: 40%; animation-delay: 4s;"></div><div class="heart" style="left: 50%; animation-delay: 5s;"></div><div class="heart" style="left: 60%; animation-delay: 6s;"></div><div class="heart" style="left: 70%; animation-delay: 7s;"></div><div class="heart" style="left: 80%; animation-delay: 8s;"></div><div class="heart" style="left: 90%; animation-delay: 9s;"></div>
+    </div>
+</body>
+</html>
